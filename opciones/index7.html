@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta Tags SEO -->
+    <title>AutoGest Pro | Software para Talleres Mecánicos - Gestión de Clientes, Refacciones y Facturación</title>
+    <meta name="description" content="Solución integral de software para talleres mecánicos. Gestión de clientes, control de refacciones, facturación electrónica y órdenes de servicio. Optimice su taller mecánico con nuestra plataforma profesional.">
+    <meta name="keywords" content="software para talleres mecánicos, gestión de refacciones, facturación electrónica, sistema de taller mecánico, gestión de clientes, órdenes de servicio, software automotriz, control de inventario, taller mecánico digital">
+    <meta name="author" content="AutoGest Pro">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="AutoGest Pro | Software Profesional para Talleres Mecánicos">
+    <meta property="og:description" content="Optimice su taller con nuestro software integral de gestión de clientes, refacciones y facturación.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.autogestpro.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/car-service.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+            border-left: 4px solid #1d4ed8;
+        }
+        
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #1d4ed8;
+            box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-blue-700 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-tools text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-900">AutoGest<span class="text-blue-700">Pro</span></h1>
+                        <p class="text-xs text-gray-600">Software para Talleres</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-blue-700 font-medium border-b-2 border-blue-700 pb-1">Inicio</a>
+                    <a href="#servicios" class="text-gray-700 hover:text-blue-700 font-medium">Servicios</a>
+                    <a href="#beneficios" class="text-gray-700 hover:text-blue-700 font-medium">Beneficios</a>
+                    <a href="#testimonios" class="text-gray-700 hover:text-blue-700 font-medium">Testimonios</a>
+                    <a href="#contacto" class="text-gray-700 hover:text-blue-700 font-medium">Contacto</a>
+                </nav>
+                
+                <!-- CTA Button -->
+                <div>
+                    <a href="#contacto" class="hidden md:inline-block bg-blue-700 hover:bg-blue-800 text-white font-medium py-2 px-6 rounded-lg transition duration-300">
+                        Demo Gratis
+                    </a>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobileMenuButton" class="md:hidden text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="hidden md:hidden py-4 border-t">
+                <div class="flex flex-col space-y-4">
+                    <a href="#inicio" class="text-blue-700 font-medium">Inicio</a>
+                    <a href="#servicios" class="text-gray-700">Servicios</a>
+                    <a href="#beneficios" class="text-gray-700">Beneficios</a>
+                    <a href="#testimonios" class="text-gray-700">Testimonios</a>
+                    <a href="#contacto" class="text-gray-700">Contacto</a>
+                    <a href="#contacto" class="bg-blue-700 text-white font-medium py-2 px-4 rounded-lg text-center">
+                        Demo Gratis
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main id="inicio" class="hero-gradient text-white">
+        <div class="container mx-auto px-4 py-16 md:py-24">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="inline-block bg-blue-600 text-white text-sm font-medium py-1 px-3 rounded-full mb-4">
+                        Solución Integral para Talleres
+                    </span>
+                    
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                        Software para Talleres Mecánicos | <span class="text-blue-300">Gestión de Clientes, Refacciones y Facturación</span>
+                    </h1>
+                    
+                    <p class="text-xl text-gray-300 mb-8">
+                        Optimice las operaciones de su taller mecánico con nuestra plataforma profesional. Controle clientes, vehículos, inventario de refacciones y facturación electrónica desde un solo lugar.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="https://app.autogestpro.com" target="_blank" class="bg-white text-blue-700 hover:bg-blue-50 font-bold py-3 px-8 rounded-lg text-center transition duration-300">
+                            <i class="fas fa-rocket mr-2"></i> Acceder a la Aplicación
+                        </a>
+                        <a href="#contacto" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-700 font-bold py-3 px-8 rounded-lg text-center transition duration-300">
+                            <i class="fas fa-calendar-alt mr-2"></i> Solicitar Demo
+                        </a>
+                    </div>
+                    
+                    <div class="mt-10 flex items-center space-x-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-400 text-xl mr-2"></i>
+                            <span class="text-gray-300">Facturación electrónica</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-400 text-xl mr-2"></i>
+                            <span class="text-gray-300">Control de inventario</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-white rounded-xl shadow-2xl p-6">
+                        <div class="bg-blue-50 rounded-lg p-6 border border-blue-100">
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">Panel de Control Demo</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between p-3 bg-white rounded-lg border">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                                            <i class="fas fa-clipboard-list text-blue-600"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-medium text-gray-800">Órdenes activas</p>
+                                            <p class="text-sm text-gray-600">12 en proceso</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-green-600 font-bold">+8%</span>
+                                </div>
+                                
+                                <div class="flex items-center justify-between p-3 bg-white rounded-lg border">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mr-3">
+                                            <i class="fas fa-dollar-sign text-green-600"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-medium text-gray-800">Ingresos del mes</p>
+                                            <p class="text-sm text-gray-600">$42,580 MXN</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-green-600 font-bold">+12%</span>
+                                </div>
+                                
+                                <div class="flex items-center justify-between p-3 bg-white rounded-lg border">
+                                    <div class="flex items-center">
+                                        <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
+                                            <i class="fas fa-users text-purple-600"></i>
+                                        </div>
+                                        <div>
+                                            <p class="font-medium text-gray-800">Clientes activos</p>
+                                            <p class="text-sm text-gray-600">156 registrados</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-green-600 font-bold">+5%</span>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 pt-6 border-t border-gray-200">
+                                <a href="https://app.autogestpro.com" target="_blank" class="block w-full bg-blue-700 hover:bg-blue-800 text-white font-medium py-3 px-4 rounded-lg text-center transition duration-300">
+                                    Ver Dashboard Completo <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Decorative elements -->
+                    <div class="absolute -top-4 -right-4 w-20 h-20 bg-blue-500 rounded-full opacity-20"></div>
+                    <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-blue-400 rounded-full opacity-20"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-blue-100 text-blue-700 text-sm font-medium py-1 px-3 rounded-full mb-4">
+                    Funcionalidades Principales
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Sistema Integral para su <span class="text-blue-700">Taller Mecánico</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Nuestro software especializado cubre todas las necesidades de gestión de su taller automotriz.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-users-cog text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Gestión de Clientes y Vehículos</h3>
+                    <p class="text-gray-600 mb-4">Administre el historial completo de clientes, vehículos y servicios realizados. Acceda rápido a información clave para un servicio personalizado.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Historial de servicios por cliente</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Recordatorios de mantenimiento</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-boxes text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Control de Refacciones e Inventario</h3>
+                    <p class="text-gray-600 mb-4">Gestione su inventario de refacciones automotrices con alertas de stock bajo, seguimiento de proveedores y control de precios.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Alertas de stock mínimo</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Gestión de proveedores</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-file-invoice-dollar text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Facturación Electrónica y Cobranza</h3>
+                    <p class="text-gray-600 mb-4">Emita facturas electrónicas CFDI 4.0, gestione pagos pendientes y genere reportes financieros para su taller mecánico.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Facturación CFDI 4.0 SAT</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Reportes de ingresos y egresos</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <div class="w-14 h-14 bg-orange-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-clipboard-check text-orange-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Órdenes de Servicio Digitales</h3>
+                    <p class="text-gray-600 mb-4">Cree, gestione y facture órdenes de servicio desde cualquier dispositivo. Incluya servicios, refacciones y firma digital del cliente.</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Firma digital en orden de servicio</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Foto evidencia del vehículo</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contacto" class="inline-flex items-center bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                    <i class="fas fa-play-circle mr-2"></i> Ver Demo Completa de Funcionalidades
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios Section -->
+    <section id="beneficios" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-blue-100 text-blue-700 text-sm font-medium py-1 px-3 rounded-full mb-4">
+                    Ventajas Competitivas
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Beneficios de Digitalizar su <span class="text-blue-700">Taller Mecánico</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Mejore la productividad, reduzca errores y incremente la satisfacción de sus clientes.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-chart-line text-blue-600 text-xl"></i>
+                                </div>
+                            </div>
+                            <div class="ml-6">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Aumente su Productividad en un 40%</h3>
+                                <p class="text-gray-600">Automatice procesos manuales como cotizaciones, órdenes de servicio y facturación. Reduzca el tiempo administrativo y enfoque en el servicio técnico.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-shield-alt text-green-600 text-xl"></i>
+                                </div>
+                            </div>
+                            <div class="ml-6">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Reducción de Errores y Pérdidas</h3>
+                                <p class="text-gray-600">Evite errores en precios, inventario y facturación. Controle exactamente sus refacciones automotrices y servicios realizados.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-smile text-purple-600 text-xl"></i>
+                                </div>
+                            </div>
+                            <div class="ml-6">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Clientes Más Satisfechos y Fieles</h3>
+                                <p class="text-gray-600">Ofrezca un servicio profesional con historial completo, recordatorios de mantenimiento y facturación electrónica inmediata.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">¿Listo para Transformar su Taller?</h3>
+                    <p class="text-gray-600 mb-6">Únase a los más de 250 talleres mecánicos que ya optimizaron sus operaciones con AutoGest Pro.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 text-xl mr-3"></i>
+                            <div>
+                                <p class="font-medium text-gray-900">Implementación en 48 horas</p>
+                                <p class="text-sm text-gray-600">Sin interrupciones en sus operaciones</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 text-xl mr-3"></i>
+                            <div>
+                                <p class="font-medium text-gray-900">Capacitación incluida</p>
+                                <p class="text-sm text-gray-600">Para todo su personal, sin costo adicional</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 text-xl mr-3"></i>
+                            <div>
+                                <p class="font-medium text-gray-900">Soporte técnico 24/7</p>
+                                <p class="text-sm text-gray-600">Asistencia permanente para su taller</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 text-xl mr-3"></i>
+                            <div>
+                                <p class="font-medium text-gray-900">Facturación electrónica SAT</p>
+                                <p class="text-sm text-gray-600">Integración directa con el sistema del SAT</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 pt-8 border-t border-gray-200">
+                        <a href="https://app.autogestpro.com" target="_blank" class="block w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-4 rounded-lg text-center transition duration-300">
+                            <i class="fas fa-external-link-alt mr-2"></i> Acceder Ahora a la Aplicación Angular
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Section -->
+    <section id="testimonios" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-blue-100 text-blue-700 text-sm font-medium py-1 px-3 rounded-full mb-4">
+                    Casos de Éxito
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Testimonios de <span class="text-blue-700">Talleres Mecánicos</span></h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Conozca la experiencia de talleres que ya implementaron nuestro software para gestión de clientes, refacciones y facturación.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user-tie text-blue-600 text-2xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-900">Ing. Roberto Martínez</h4>
+                            <p class="text-sm text-gray-600">Taller Mecánico "El Rápido"</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-6">"Desde que implementamos AutoGest Pro, redujimos un 60% el tiempo en administración. La gestión de refacciones y la facturación electrónica han sido un cambio radical para nuestro taller mecánico."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user-tie text-green-600 text-2xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-900">Lic. Ana García</h4>
+                            <p class="text-sm text-gray-600">Autoservicio "Mecánica Total"</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-6">"El control de inventario de refacciones nos ha ayudado a evitar pérdidas por caducidad o robo. Además, nuestros clientes valoran la rapidez en la facturación electrónica y el historial digital de sus vehículos."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user-tie text-purple-600 text-2xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-900">Mec. Javier López</h4>
+                            <p class="text-sm text-gray-600">"Servicio Diesel Profesional"</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-6">"Como taller especializado en diesel, necesitábamos un software que manejara refacciones específicas y servicios complejos. AutoGest Pro se adaptó perfectamente a nuestras necesidades de gestión de taller mecánico."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-gray-700 mb-6">Más de <span class="font-bold text-blue-700">250 talleres mecánicos</span> ya confían en nuestro software para la gestión de clientes, refacciones y facturación.</p>
+                <a href="#contacto" class="inline-flex items-center text-blue-700 hover:text-blue-800 font-bold">
+                    <i class="fas fa-comments mr-2"></i> Solicite referencias de talleres en su zona
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-blue-600 text-white text-sm font-medium py-1 px-3 rounded-full mb-4">
+                    Contáctenos
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Solicite una <span class="text-blue-300">Demo Personalizada</span></h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Descubra cómo nuestro software para talleres mecánicos puede transformar la gestión de su negocio automotriz.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Formulario -->
+                <div class="bg-gray-800 rounded-xl p-8">
+                    <h3 class="text-2xl font-bold mb-6">Formulario de Contacto</h3>
+                    <form id="contactForm" class="contact-form space-y-6">
+                        <div>
+                            <label for="nombre" class="block text-gray-300 mb-2">Nombre Completo *</label>
+                            <input type="text" id="nombre" required class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="block text-gray-300 mb-2">Correo Electrónico *</label>
+                                <input type="email" id="email" required class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            
+                            <div>
+                                <label for="telefono" class="block text-gray-300 mb-2">Teléfono *</label>
+                                <input type="tel" id="telefono" required class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="taller" class="block text-gray-300 mb-2">Nombre del Taller Mecánico *</label>
+                            <input type="text" id="taller" required class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label for="mensaje" class="block text-gray-300 mb-2">¿Qué necesita para su taller? *</label>
+                            <textarea id="mensaje" rows="4" required class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <input type="checkbox" id="privacidad" required class="w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded">
+                            <label for="privacidad" class="ml-2 text-gray-300 text-sm">Acepto la <a href="#" class="text-blue-400 hover:text-blue-300">Política de Privacidad</a></label>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                            <i class="fas fa-paper-plane mr-2"></i> Solicitar Demo Gratuita
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Información de Contacto -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-8">Información de Contacto</h3>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone-alt text-white text-xl"></i>
+                            </div>
+                            <div class="ml-6">
+                                <h4 class="text-xl font-bold mb-2">Teléfono de Contacto</h4>
+                                <p class="text-gray-300">(55) 1234-5678</p>
+                                <p class="text-gray-400 text-sm">Lunes a Viernes de 9:00 a 18:00 hrs</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-white text-xl"></i>
+                            </div>
+                            <div class="ml-6">
+                                <h4 class="text-xl font-bold mb-2">Correo Electrónico</h4>
+                                <p class="text-gray-300">info@autogestpro.com</p>
+                                <p class="text-gray-400 text-sm">Respondemos en menos de 24 horas</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-desktop text-white text-xl"></i>
+                            </div>
+                            <div class="ml-6">
+                                <h4 class="text-xl font-bold mb-2">Acceso a la Aplicación</h4>
+                                <p class="text-gray-300">app.autogestpro.com</p>
+                                <a href="https://app.autogestpro.com" target="_blank" class="inline-flex items-center text-blue-300 hover:text-blue-200 font-medium mt-2">
+                                    <i class="fas fa-external-link-alt mr-2"></i> Acceder ahora a la plataforma Angular
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12 bg-gray-800 rounded-xl p-6">
+                        <h4 class="text-xl font-bold mb-4">¿Por qué elegir AutoGest Pro?</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
+                                <span class="text-gray-300">Especializado en talleres mecánicos</

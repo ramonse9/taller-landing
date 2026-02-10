@@ -18,14 +18,15 @@
     <script
         id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { primary: "#2C097F", "background-light": "#f6f6f8", "background-dark": "#151022" }, fontFamily: { display: "Inter" }, borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" } } } };</script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .bg-corporate-dark { background-color: #0F172A; }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
 
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
     </style>
-    <!--<style>
+    <style>
         body {
             min-height: max(884px, 100dvh);
         }
@@ -34,7 +35,7 @@
         body {
             min-height: max(884px, 100dvh);
         }
-    </style>-->
+    </style>
     <style>
         body {
             min-height: max(884px, 100dvh);
@@ -51,7 +52,7 @@
                 <div class="bg-primary text-white p-1.5 rounded-lg">
                     <span class="material-symbols-outlined block">reset_wrench</span>
                 </div>
-                <span class="text-lg font-extrabold tracking-tight">Multiservicios 24/7</span>
+                <span class="text-lg font-extrabold tracking-tight">SaaS Talleres</span>
             </div>
             <div class="flex items-center gap-4">
                 <nav class="hidden md:flex gap-6 text-sm font-medium">
@@ -59,8 +60,6 @@
                         href="#caracteristicas">Características</a>
                     <a class="hover:text-primary dark:hover:text-blue-400 transition-colors"
                         href="#beneficios">Beneficios</a>
-                    <a class="hover:text-primary dark:hover:text-blue-400 transition-colors"
-                        href="#testimonios">Testimonios</a>
                     <a class="hover:text-primary dark:hover:text-blue-400 transition-colors" href="#precios">Precios</a>
                 </nav>
                 <a class="bg-primary text-white text-xs font-bold py-2 px-4 rounded-lg hover:opacity-90 transition-opacity"
@@ -211,7 +210,7 @@
             </div>
         </section>
         <!-- Social Proof / Testimonials -->
-        <section class="px-4 py-16 bg-slate-50 dark:bg-[#131316] overflow-hidden" id="testimonios">
+        <section class="px-4 py-16 bg-slate-50 dark:bg-[#131316] overflow-hidden">
             <div class="max-w-screen-xl mx-auto">
                 <h2 class="text-center text-3xl font-bold mb-12">Lo que dicen nuestros clientes</h2>
                 <div class="flex overflow-x-auto gap-6 pb-8 snap-x no-scrollbar">
@@ -224,8 +223,8 @@
                                 class="material-symbols-outlined">star</span><span
                                 class="material-symbols-outlined">star</span>
                         </div>
-                        <p class="text-slate-600 dark:text-slate-300 italic mb-6">"Desde que implementamos Multiservicios
-                            24/7, el orden en el taller es otro nivel. La facturación ahora toma segundos."</p>
+                        <p class="text-slate-600 dark:text-slate-300 italic mb-6">"Desde que implementamos SaaS
+                            Talleres, el orden en el taller es otro nivel. La facturación ahora toma segundos."</p>
                         <div class="flex items-center gap-4">
                             <div
                                 class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">
@@ -261,37 +260,38 @@
             </div>
         </section>
         <!-- Contact / Lead Gen Form -->
-         <section id="contacto" class="py-20">
-            <div class="container mx-auto px-6 max-w-4xl">
-                <div class="bg-slate-900 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
-                    <div class="p-10 md:w-1/2 text-white">
-                        <h2 class="text-3xl font-bold mb-6">Impulsa tu taller hoy</h2>
-                        <p class="text-slate-400 mb-8">Déjanos tus datos y un consultor experto te ayudará a configurar tu cuenta según tus necesidades.</p>
-                        <div class="space-y-4">
-                            <p class="flex items-center"><span class="mr-3">📍</span> Sede Central, Distrito Tecnológico</p>
-                            <p class="flex items-center"><span class="mr-3">📧</span> soporte@mecapro.com</p>
-                        </div>
-                    </div>
-                    <div class="p-10 md:w-1/2 bg-gray-50">
-                        <form action="#" class="space-y-4">
-                            <div>
-                                <label class="block text-sm font-semibold mb-1">Nombre Completo</label>
-                                <input type="text" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-600 outline-none" placeholder="Juan Pérez">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-semibold mb-1">Correo Electrónico</label>
-                                <input type="email" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-600 outline-none" placeholder="juan@taller.com">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-semibold mb-1">Nombre del Taller</label>
-                                <input type="text" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-600 outline-none" placeholder="Mecánica Veloz">
-                            </div>
-                            <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition duration-300">
-                                Enviar Información
-                            </button>
-                        </form>
-                    </div>
+        <section class="px-4 py-20" id="contacto">
+            <div
+                class="max-w-md mx-auto bg-white dark:bg-background-dark p-8 rounded-3xl shadow-2xl border border-slate-200 dark:border-slate-800">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl font-bold mb-2">Solicita una Demo</h2>
+                    <p class="text-slate-600 dark:text-slate-400">Déjanos tus datos y un especialista te contactará.</p>
                 </div>
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Nombre Completo</label>
+                        <input
+                            class="w-full bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-700 rounded-lg focus:ring-primary focus:border-primary px-4 py-3"
+                            placeholder="Juan Pérez" type="text" />
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Nombre del Taller</label>
+                        <input
+                            class="w-full bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-700 rounded-lg focus:ring-primary focus:border-primary px-4 py-3"
+                            placeholder="Taller Mecánico El Rayo" type="text" />
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Correo Electrónico</label>
+                        <input
+                            class="w-full bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-700 rounded-lg focus:ring-primary focus:border-primary px-4 py-3"
+                            placeholder="contacto@taller.com" type="email" />
+                    </div>
+                    <button
+                        class="w-full bg-primary text-white font-bold py-4 rounded-xl hover:opacity-95 transition-opacity mt-4"
+                        type="submit">
+                        Enviar Solicitud
+                    </button>
+                </form>
             </div>
         </section>
     </main>
@@ -304,7 +304,7 @@
                         <div class="bg-white text-primary p-1 rounded-lg">
                             <span class="material-symbols-outlined block">reset_wrench</span>
                         </div>
-                        <span class="text-xl font-extrabold">Multiservicios 24/7</span>
+                        <span class="text-xl font-extrabold">SaaS Talleres</span>
                     </div>
                     <p class="text-slate-400 text-sm leading-relaxed">
                         Líderes en software de gestión para la industria automotriz en Latinoamérica.
@@ -332,17 +332,17 @@
                     <h6 class="font-bold mb-6">Contacto</h6>
                     <ul class="space-y-4 text-sm text-slate-400">
                         <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">mail</span>
-                            contacto@multiservicios247.com</li>
+                            info@saastalleres.com</li>
                         <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">call</span>
-                            +52 (667) 104-3281</li>
+                            +52 (55) 1234-5678</li>
                         <li class="flex items-center gap-2"><span
-                                class="material-symbols-outlined text-xs">location_on</span> Culiacán, Sinaloa, MX</li>
+                                class="material-symbols-outlined text-xs">location_on</span> Ciudad de México, MX</li>
                     </ul>
                 </div>
             </div>
             <div
                 class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-                <p>© 2026 Multiservicios 24/7. Software de Gestión Automotriz. Todos los derechos reservados.</p>
+                <p>© 2024 SaaS Talleres. Todos los derechos reservados.</p>
                 <div class="flex gap-6">
                     <a class="hover:text-white transition-colors" href="#">Privacidad</a>
                     <a class="hover:text-white transition-colors" href="#">Términos</a>
